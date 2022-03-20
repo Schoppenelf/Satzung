@@ -1,0 +1,54 @@
+\documentclass[]{scrartcl}
+
+%encoding
+% Umlaute unter UTF8 nutzen
+\usepackage[utf8]{inputenc}
+
+% Zeichenencoding
+\usepackage[T1]{fontenc}
+
+\usepackage{lmodern}
+\usepackage{fix-cm}
+
+% Schriftart Helvetica
+\usepackage{helvet}
+
+%German-specific commands
+%--------------------------------------
+\usepackage[ngerman]{babel}
+%--------------------------------------
+
+
+% Paket für Seitenrandabstände und Einstellung für Seitenränder
+\usepackage{geometry}
+\geometry{left=2.5cm, right=2.5cm, top=3cm, bottom=3cm}
+
+% Disable single lines at the start of a paragraph (Schusterjungen)
+\clubpenalty = 10000
+% Disable single lines at the end of a paragraph (Hurenkinder)
+\widowpenalty = 10000
+\displaywidowpenalty = 10000
+
+% Schaltet den zusätzlichen Zwischenraum ab, den LaTeX normalerweise nach einem Satzzeichen einfügt.
+\frenchspacing
+
+%Paragraph and sub paragraph definition
+\renewcommand*\thesection{§ \arabic{section}}
+\renewcommand*\thesubsection{\arabic{section}.\arabic{subsection}}
+\renewcommand*\thesubsection{(\arabic{subsection})}
+
+%correct breaking of words
+\hyphenation{Ernte-dank-fest}
+
+%opening
+\title{Satzung der Burschenschaft "Schoppenelf" Oberquembach e.V.}
+\author{}
+
+\begin{document}
+
+\maketitle
+
+\include{Satzung}
+	
+
+\end{document}
